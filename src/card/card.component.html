@@ -1,0 +1,25 @@
+<p>Search Box Works!</p>
+
+<form class="search-box-container" onsubmit="return false">
+  <input
+    id="searchInput"
+    [tabindex]="tabIndex"
+    type="text"
+    placeholder="Search..."
+    class="p-inputtext-sm"
+    [value]="value"
+    [attr.maxlength]="maxLength"
+  />
+
+  <div class="input-group-append">
+    <button
+      id="searchClaims"
+      type="submit"
+      class="p-button p-button-sm p-button-secondary"
+      [tabindex]="tabIndex"
+      (click)="startSearch()"
+    >
+      <span class="pi pi-search"></span>
+    </button>
+  </div>
+</form>
