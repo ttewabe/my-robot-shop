@@ -7,15 +7,18 @@
   justify-content: space-between;
   padding: 25px 250px;
 }
-.filters button {
-  width: 100%;
+.filters .button {
+  padding: 10px;
+  margin-right: 20px;
+  background-color: rgb(95, 144, 177);
+  color: azure;
 }
 .products {
   margin: 0 100px;
-  border-top: 2px solid #888;
+  border-top: 2px solid #ce9ad4;
 }
 .product-item {
-  border-bottom: 2px solid #888;
+  border-bottom: 2px solid #ce9ad4;
   list-style: none;
 }
 .product {
@@ -27,8 +30,12 @@
   display: flex;
   justify-self: start;
   align-items: center;
-  gap: 3px;
-  width: 100%;
+  gap: 23px;
+}
+.product-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 .product-info {
   display: flex;
@@ -48,7 +55,7 @@
   min-width: 100px;
   font-size: 20px;
   color: #000000;
-  border-left: 2px solid #aaa;
+  border-left: 2px solid #ce9ad4;
   margin-left: 5px;
   padding-left: 10px;
   :hover {
@@ -58,4 +65,6 @@
 .product .price button {
   padding: 10px;
   width: 100px;
+  border: none;
+  font-size: 25px;
 }
