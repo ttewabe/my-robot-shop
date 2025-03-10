@@ -8,7 +8,7 @@ import { IProduct } from './product.module';
   styleUrls: ['./catalog.component.scss'],
 })
 export class CatalogComponent {
-  products: IProduct[];
+  products: any;
   filter: string = '';
 
   constructor() {
@@ -29,7 +29,7 @@ export class CatalogComponent {
         price: 945.0,
         imageName: 'assets/images/robot-head.jpeg',
         catagory: 'Head',
-        discount: 0.2,
+        discount: 0,
       },
       {
         id: 3,
@@ -47,7 +47,7 @@ export class CatalogComponent {
         price: 980.0,
         imageName: 'assets/images/robot-leg.jpeg',
         catagory: 'Legs',
-        discount: 0.2,
+        discount: 0,
       },
       {
         id: 5,
@@ -65,7 +65,7 @@ export class CatalogComponent {
         price: 1023.0,
         imageName: 'assets/images/robot-arm.jpeg',
         catagory: 'Arms',
-        discount: 0.2,
+        discount: 0,
       },
     ];
   }
@@ -73,6 +73,8 @@ export class CatalogComponent {
   getFilteredProducts() {
     return this.filter === '' || this.filter === 'All'
       ? this.products
-      : this.products.filter((p) => p.catagory === this.filter);
+      : this.products.filter(
+          (product: any) => product.catagory === this.filter,
+        );
   }
 }

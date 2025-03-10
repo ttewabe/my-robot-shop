@@ -58,13 +58,15 @@
   border-left: 2px solid #ce9ad4;
   margin-left: 5px;
   padding-left: 10px;
-  :hover {
-    background-color: #ce9ad4;
-  }
 }
 .product .price button {
   padding: 10px;
   width: 100px;
   border: none;
   font-size: 25px;
+  background-color: #c85fd4;
+  gap: 10px;
+}
+.discount {
+  color: #c85fd4;
 }
