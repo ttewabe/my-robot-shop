@@ -67,6 +67,12 @@
   background-color: #c85fd4;
   gap: 10px;
 }
+.original-price {
+  color: gray;
+  text-decoration: line-through;
+  margin-right: 5px;
+}
 .discount {
   color: #c85fd4;
+  font-weight: bold;
 }
