@@ -1,10 +1,32 @@
 <div class="container">
   <div class="filters">
-    <a class="button" (click)="filter = 'Head'">Head</a>
-    <a class="button" (click)="filter = 'Legs'">Legs</a>
-    <a class="button" (click)="filter = 'Arms'">Arms</a>
-    <a class="button" (click)="filter = 'Torso'">Torso</a>
-    <a class="button" (click)="filter = 'All'">All</a>
+    <a
+      class="button"
+      [class.active]="filter === 'Head'"
+      (click)="filter = 'Head'"
+      >Head</a
+    >
+    <a
+      class="button"
+      [class.active]="filter === 'Legs'"
+      (click)="filter = 'Legs'"
+      >Legs</a
+    >
+    <a
+      class="button"
+      [class.active]="filter === 'Arms'"
+      (click)="filter = 'Arms'"
+      >Arms</a
+    >
+    <a
+      class="button"
+      [class.active]="filter === 'Torso'"
+      (click)="filter = 'Torso'"
+      >Torso</a
+    >
+    <a class="button" [class.active]="filter === 'All'" (click)="filter = 'All'"
+      >All</a
+    >
   </div>
   <ul class="products">
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
@@ -16,7 +38,7 @@
             [alt]="product.name"
           />
           <div class="product-info">
-            <div class="name">{{ product.name }}</div>
+            <div class="name red">{{ product.name }}</div>
             <div class="product-description">{{ product.description }}</div>
             <div class="product-catagory">
               Part Type: {{ product.catagory }}
@@ -25,7 +47,7 @@
         </div>
 
         <div class="price">
-          <div *ngIf="product.discount === 0">
+          <div class="real-price" *ngIf="product.discount === 0">
             {{ product.price | currency: "EUR" }}
           </div>
           <div class="discount" *ngIf="product.discount > 0">
@@ -35,7 +57,7 @@
               {{ product.price * (1 - product.discount) | currency: "EUR" }}
             </div>
           </div>
-          <button class="cta">Buy</button>
+          <a class="button">Buy</a>
         </div>
       </div>
     </li>
