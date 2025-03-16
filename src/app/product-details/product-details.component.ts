@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IProduct } from '../catalog/product.model';
 
 @Component({
@@ -8,12 +8,14 @@ import { IProduct } from '../catalog/product.model';
 })
 export class ProductDetailsComponent {
   @Input() product!: IProduct;
+  @Output() buy = new EventEmitter();
+
   getImageUrl(product: IProduct) {
     if (!product) return '';
     return '/assets/images' + product.imageName;
   }
 
-  addedToCart(product: IProduct) {
-    console.log(`product ${product.name} added to cart`);
+  buyButtonClicked(product: IProduct) {
+    this.buy.emit();
   }
 }

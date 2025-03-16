@@ -30,7 +30,10 @@
   </div>
   <ul class="products">
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
-      <app-product-details [product]="product"></app-product-details>
+      <app-product-details
+        [product]="product"
+        (buy)="addedToCart(product)"
+      ></app-product-details>
     </li>
   </ul>
 </div>
