@@ -1,4 +1,4 @@
-import { IProduct } from './product.module';
+import { IProduct } from './product.model';
 
 export const PRODUCTS: IProduct[] = [
   // Head Category
@@ -18,7 +18,7 @@ export const PRODUCTS: IProduct[] = [
     price: 945.0,
     imageName: 'assets/images/robot-head1.jpeg',
     catagory: 'Head',
-    discount: 0,
+    discount: 0.0,
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1050.0,
     imageName: 'assets/images/robot-leg.jpeg',
     catagory: 'Legs',
-    discount: 0.15,
+    discount: 0,
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1250.0,
     imageName: 'assets/images/robot-leg2.jpeg',
     catagory: 'Legs',
-    discount: 0.12,
+    discount: 0,
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1100.0,
     imageName: 'assets/images/robot-arm.jpeg',
     catagory: 'Arms',
-    discount: 0.12,
+    discount: 0,
   },
   {
     id: 10,
@@ -112,7 +112,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1500.0,
     imageName: 'assets/images/robot-arm3.jpeg',
     catagory: 'Arms',
-    discount: 0.18,
+    discount: 0,
   },
 
   // Torso Category (New)
@@ -123,7 +123,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1700.0,
     imageName: 'assets/images/robot-torso.jpeg',
     catagory: 'Torso',
-    discount: 0.2,
+    discount: 0,
   },
   {
     id: 14,
@@ -132,7 +132,7 @@ export const PRODUCTS: IProduct[] = [
     price: 1600.0,
     imageName: 'assets/images/robot-torso1.jpeg',
     catagory: 'Torso',
-    discount: 0.1,
+    discount: 0,
   },
   {
     id: 15,
@@ -150,6 +150,6 @@ export const PRODUCTS: IProduct[] = [
     price: 1900.0,
     imageName: 'assets/images/robot-torso3.jpeg',
     catagory: 'Torso',
-    discount: 0.22,
+    discount: 0,
   },
 ];

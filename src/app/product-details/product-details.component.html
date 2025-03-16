@@ -1,0 +1,24 @@
+<div class="product">
+  <div class="product-details">
+    <img
+      class="product-image"
+      src="{{ product.imageName }}"
+      [alt]="product.name"
+    />
+    <div class="product-info">
+      <div class="name">{{ product.name }}</div>
+      <div class="description">{{ product.description }}</div>
+      <div class="catagory">Part Type: {{ product.catagory }}</div>
+    </div>
+  </div>
+
+  <div class="price">
+    <div [ngClass]="{ strikethrough: product.discount > 0 }">
+      {{ product.price | currency: "USD" }}
+    </div>
+    <div class="discount" *ngIf="product.discount > 0">
+      {{ product.price * (1 - product.discount) | currency: "USD" }}
+    </div>
+    <button class="cta" (click)="addedToCart(product)">Buy</button>
+  </div>
+</div>

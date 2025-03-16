@@ -30,36 +30,7 @@
   </div>
   <ul class="products">
     <li class="product-item" *ngFor="let product of getFilteredProducts()">
-      <div class="product">
-        <div class="product-details">
-          <img
-            class="product-image"
-            src="{{ product.imageName }}"
-            [alt]="product.name"
-          />
-          <div class="product-info">
-            <div class="name red">{{ product.name }}</div>
-            <div class="product-description">{{ product.description }}</div>
-            <div class="product-catagory">
-              Part Type: {{ product.catagory }}
-            </div>
-          </div>
-        </div>
-
-        <div class="price">
-          <div class="real-price" *ngIf="product.discount === 0">
-            {{ product.price | currency: "EUR" }}
-          </div>
-          <div class="discount" *ngIf="product.discount > 0">
-            <!-- s tag is used to strike through the original price -->
-            <s class="original-price">{{ product.price | currency: "EUR" }}</s>
-            <div>
-              {{ product.price * (1 - product.discount) | currency: "EUR" }}
-            </div>
-          </div>
-          <a class="button">Buy</a>
-        </div>
-      </div>
+      <app-product-details [product]="product"></app-product-details>
     </li>
   </ul>
 </div>

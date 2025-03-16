@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IProduct } from './product.module';
+import { IProduct } from './product.model';
 import { PRODUCTS } from './product.data';
 
 @Component({
@@ -10,6 +10,12 @@ import { PRODUCTS } from './product.data';
 export class CatalogComponent {
   products: IProduct[] = PRODUCTS;
   filter: string = '';
+  cart: IProduct[] = [];
+
+  addedToCart(product: IProduct) {
+    this.cart.push(product);
+    console.log(`product ${product.name} added to cart`);
+  }
 
   getFilteredProducts(): IProduct[] {
     return this.filter === '' || this.filter === 'All'
