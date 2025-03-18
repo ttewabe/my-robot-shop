@@ -8,7 +8,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'High-tech robotic head with sensors',
     price: 1200.0,
     imageName: 'assets/images/robot-head.jpeg',
-    catagory: 'Head',
+    category: 'Head',
     discount: 0.1,
   },
   {
@@ -17,7 +17,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Friendly robot head with expressive features',
     price: 945.0,
     imageName: 'assets/images/robot-head1.jpeg',
-    catagory: 'Head',
+    category: 'Head',
     discount: 0.0,
   },
   {
@@ -26,7 +26,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Low-profile robot head with night vision',
     price: 1300.0,
     imageName: 'assets/images/robot-head2.jpeg',
-    catagory: 'Head',
+    category: 'Head',
     discount: 0.05,
   },
   {
@@ -35,7 +35,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Robot head with built-in AI assistant',
     price: 1500.0,
     imageName: 'assets/images/robot-head3.jpeg',
-    catagory: 'Head',
+    category: 'Head',
     discount: 0.08,
   },
 
@@ -46,7 +46,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Powerful legs with high mobility',
     price: 1050.0,
     imageName: 'assets/images/robot-leg.jpeg',
-    catagory: 'Legs',
+    category: 'Legs',
     discount: 0,
   },
   {
@@ -55,7 +55,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Lightweight robot legs for casual movement',
     price: 980.0,
     imageName: 'assets/images/robot-leg1.jpeg',
-    catagory: 'Legs',
+    category: 'Legs',
     discount: 0,
   },
   {
@@ -64,7 +64,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Durable legs for industrial use',
     price: 1250.0,
     imageName: 'assets/images/robot-leg2.jpeg',
-    catagory: 'Legs',
+    category: 'Legs',
     discount: 0,
   },
   {
@@ -73,7 +73,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Optimized for high-speed movement',
     price: 1400.0,
     imageName: 'assets/images/robot-leg3.jpeg',
-    catagory: 'Legs',
+    category: 'Legs',
     discount: 0.1,
   },
 
@@ -84,7 +84,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'High-tech robotic arms with precision control',
     price: 1100.0,
     imageName: 'assets/images/robot-arm.jpeg',
-    catagory: 'Arms',
+    category: 'Arms',
     discount: 0,
   },
   {
@@ -93,7 +93,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Friendly robot arm with customizable grip',
     price: 1023.0,
     imageName: 'assets/images/robot-arm1.jpeg',
-    catagory: 'Arms',
+    category: 'Arms',
     discount: 0,
   },
   {
@@ -102,7 +102,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Capable of lifting heavy loads with ease',
     price: 1350.0,
     imageName: 'assets/images/robot-arm2.jpeg',
-    catagory: 'Arms',
+    category: 'Arms',
     discount: 0.14,
   },
   {
@@ -111,7 +111,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Versatile arms with multiple tool attachments',
     price: 1500.0,
     imageName: 'assets/images/robot-arm3.jpeg',
-    catagory: 'Arms',
+    category: 'Arms',
     discount: 0,
   },
 
@@ -122,7 +122,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Durable and impact-resistant torso structure',
     price: 1700.0,
     imageName: 'assets/images/robot-torso.jpeg',
-    catagory: 'Torso',
+    category: 'Torso',
     discount: 0,
   },
   {
@@ -131,7 +131,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Light and flexible torso for agile movement',
     price: 1600.0,
     imageName: 'assets/images/robot-torso1.jpeg',
-    catagory: 'Torso',
+    category: 'Torso',
     discount: 0,
   },
   {
@@ -140,7 +140,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Optimized for long battery life',
     price: 1750.0,
     imageName: 'assets/images/robot-torso2.jpeg',
-    catagory: 'Torso',
+    category: 'Torso',
     discount: 0.15,
   },
   {
@@ -149,7 +149,7 @@ export const PRODUCTS: IProduct[] = [
     description: 'Armor-plated torso for high-endurance missions',
     price: 1900.0,
     imageName: 'assets/images/robot-torso3.jpeg',
-    catagory: 'Torso',
+    category: 'Torso',
     discount: 0,
   },
 ];
